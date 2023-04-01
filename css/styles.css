@@ -1,0 +1,77 @@
+/* Styles CSS Parallax */
+html,
+body{
+  font-family: 'JetBrains Mono', monospace;
+  color: rgb(249, 249, 249);
+  height: 100%;
+}
+
+
+
+body {
+  display: grid;
+  place-items: center;
+  perspective: 1000px;
+  margin: 0;
+  padding: 0;
+  background: rgb(103, 51, 189);
+  color: rgb(249, 249, 249);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 320px;
+  border-radius: 16px;
+  background: url("/img/bg.webp") center;
+  background-size: 110%;
+  transition: 0.5s;
+}
+
+.card h1 {
+  font-size: 38px;
+}
+
+.card button {
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 0;
+  background: rgb(34, 30, 111);
+  color: rgb(249, 249, 249);
+  font-family: inherit;
+}
+
+
+section{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  position: fixed;
+  letter-spacing: 1px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: rgb(111, 105, 105);
+  text-align: center;
+}
